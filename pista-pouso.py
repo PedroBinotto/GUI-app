@@ -30,7 +30,7 @@ def main():
 		if i < result_final:
 			result_final = i
 
-	cab_final = cabs[results.index(result_final)]
+	cab_final = "Cabeçeira " + str(cabs[results.index(result_final)])
 
 	display.delete('1.0', tk.END)
 	display.insert(tk.END, cab_final)
@@ -66,7 +66,7 @@ entry_field4.pack()
 enter = tk.Button(text="OK", command=main)
 enter.pack()
 
-display = tk.Text(master=win, height=1, width=10)
+display = tk.Text(master=win, height=1, width=15)
 display.pack(padx=(10, 2))
 
 win.mainloop()
