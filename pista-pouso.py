@@ -14,7 +14,7 @@ def main():
 		display.delete('1.0', tk.END)
 		display.insert(tk.END, erro)
 
-	ang_final = dec + vent
+	ang_final = vent - dec
 
 	results = []
 
